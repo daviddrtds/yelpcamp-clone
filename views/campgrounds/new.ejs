@@ -1,0 +1,60 @@
+<% layout("layouts/boilerplate") %>
+    <div class="row">
+        <h3 class="text-center mb-3">New Campground</h3>
+        <div class="col-md-6 offset-md-3">
+            <form action="/campgrounds" method="post" class="formVal" novalidate enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control form-control-sm" type="text" name="campground[title]" id="title"
+                        required>
+                    <div class="valid-feedback">
+                        Good title!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a title.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location</label>
+                    <input class="form-control form-control-sm" type="text" name="campground[location]" id="location"
+                        required>
+                    <div class="valid-feedback">
+                        Good location!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a location.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="price">Price</label>
+                    <input class="form-control form-control-sm" type="text" name="campground[price]" id="price"
+                        required>
+                    <div class="valid-feedback">
+                        Price ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a price.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description</label>
+                    <textarea class="form-control form-control-sm" type="text" name="campground[description]" required
+                        id="description"></textarea>
+                    <div class="valid-feedback">
+                        Good description!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please write a description.
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="image" class="form-label">Images</label>
+                    <input class="form-control form-control-sm" type="file" id="image" name="image" multiple>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary">Add Campground</button>
+                </div>
+            </form>
+            <a href="/campgrounds">Back</a>
+        </div>
+    </div>

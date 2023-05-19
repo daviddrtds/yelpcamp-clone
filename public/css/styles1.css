@@ -1,0 +1,21 @@
+#cluster-map {
+    width: 100%;
+    height: 500px;
+}
+
+#small-map {
+    width: 100%;
+    height: 300px;
+}
+
+.imgcarr {
+    object-fit: cover;
+    max-height: 300px;
+    margin-bottom: 20px;
+}
+
+.indximg {
+    object-fit: cover;
+    min-width: 100%;
+    height: 220px;
+}

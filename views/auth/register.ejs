@@ -1,0 +1,61 @@
+<% layout("layouts/boilerplate") %>
+
+<div class="container d-flex align-items-center mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-5 col-xl-3 col-sm-7">
+      <div class="card shadow">
+        <img
+          crossorigin="anonymous"
+          src="https://images.unsplash.com/photo-1571863533956-01c88e79957e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+          alt=""
+          class="card-img-top"
+        />
+        <div class="card-body p-4">
+          <h5 class="card-title">Register</h5>
+          <form action="/register" method="post" class="formVal" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="username">Username</label>
+              <input
+                class="form-control form-control-sm"
+                type="text"
+                name="username"
+                id="username"
+                autofocus
+                required
+              />
+              <div class="valid-feedback">Valid Username!</div>
+              <div class="invalid-feedback">Please choose a username.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email</label>
+              <input
+                class="form-control form-control-sm"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+              <div class="valid-feedback">Valid Email!</div>
+              <div class="invalid-feedback">Please choose an email.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="password">Password</label>
+              <input
+                class="form-control form-control-sm"
+                type="password"
+                name="password"
+                id="password"
+                required
+              />
+              <div class="valid-feedback">Valid Password!</div>
+              <div class="invalid-feedback">Please choose a password.</div>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary btn-block">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
