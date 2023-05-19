@@ -64,11 +64,13 @@
                         <label for="image-<%= i %>"">Delete</label>
                         <% }) %>
                 </div>
-
+                <div class="row">
                 <div class=" mb-3">
                             <button class="btn btn-primary">Save</button>
                 </div>
+                <a class="backbtn" href="/campgrounds/<%= campground._id %>">Back</a>
+                </div>
             </form>
-            <a class="backbtn" href="/campgrounds/<%= campground._id %>">Back</a>
+    
         </div>
     </div>
