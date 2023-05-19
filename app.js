@@ -23,7 +23,7 @@ const User = require("./models/user");
 const mongoSanitize = require("express-mongo-sanitize");
 const helmet = require("helmet");
 const MongoStore = require("connect-mongo");
-const dbUrl = "mongodb://127.0.0.1:27017/yelp-camp" || process.env.db_url;
+const dbUrl = process.env.db_url || "mongodb://127.0.0.1:27017/yelp-camp";
 
 mongoose
   .connect(dbUrl)
